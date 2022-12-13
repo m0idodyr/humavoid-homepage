@@ -1,0 +1,163 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .hp-section {
+    height: 800px;
+    background-size: cover;
+  }
+
+  .nav-links-wrapper li {
+    display: none;
+  }
+
+  .home-section-header {
+    background: black;
+    flex-direction: row;
+  }
+
+  .navigation-bar-burger-icon {
+  }
+
+  .navigation-bar-burger-icon div {
+    color: white;
+    position: absolute;
+    left: 0;
+    top: 1;
+    font-size: 36px;
+    padding-left: 20px;
+    padding-top: 2px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .hp-section {
+    min-height: 500px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .hp-section {
+    min-height: 600px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .hp-section {
+    background-position-x: 25%;
+    min-height: 800px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .hp-section {
+    background-position-x: 25%;
+    min-height: 1000px;
+  }
+}
+
+@media only screen and (min-width: 1680px) {
+  .hp-section {
+    background-position-x: 25%;
+  }
+}
+
+@media only screen and (min-width: 2000px) {
+  .hp-section {
+  }
+}
+
+.App {
+  text-align: center;
+  overflow: hidden;
+  background: green;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.homepage-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #111111;
+  width: 100%;
+}
+
+.home-section-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.nav-links-wrapper {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding-left: 0px;
+}
+
+.nav-links-wrapper li:hover {
+  color: orange;
+  cursor: pointer;
+}
+
+.section-wrapper {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 1680px;
+}
+
+.hp-section {
+}
+
+.humavoid-home-section-logo {
+  height: 45px;
+  width: 200px;
+  background-image: url("./../images/Sivustoelementit/Logo_Hero.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.home-section {
+  background-image: url("./../images/Taustakuvat/1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bio-section {
+  background-image: url("./../images/Taustakuvat/2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.tour-section {
+  background-image: url("./../images/Taustakuvat/3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.store-section {
+  background-image: url("./../images/Taustakuvat/4.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.contact-section {
+  background-image: url("./../images/Taustakuvat/5.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
