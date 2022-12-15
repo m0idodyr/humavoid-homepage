@@ -9,16 +9,31 @@
     display: none;
   }
 
-  .home-section-header {
-    background: black;
-    flex-direction: row;
+  .home-section-header-unscrolled {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    background: #111111;
+    margin-top: -128px;
+    position: sticky;
+    top: 0;
   }
 
-  .navigation-bar-burger-icon {
+  .home-section-header-scrolled {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    background: #111111;
+    margin-top: -128px;
+    position: sticky;
+    top: 0;
   }
 
   .navigation-bar-burger-icon div {
     color: white;
+    display: block;
     position: absolute;
     left: 0;
     top: 1;
@@ -26,46 +41,203 @@
     padding-left: 20px;
     padding-top: 2px;
   }
+
+  .home-section {
+    background-position-x: 19%;
+  }
+
+  .humavoid-home-section-logo {
+    margin-left: 30px;
+  }
+
+  .bio-section {
+    background-position-x: 0%;
+  }
+
+  .tour-section {
+    background-position-x: 0%;
+  }
+
+  .store-section {
+    background-position-x: 17%;
+  }
+
+  .contact-section {
+    background-position-x: 19%;
+  }
+
+  .smoke-1 {
+    height: 800px;
+    margin-top: -465px;
+    background-image: url("./../images/Taustakuvat/smokekaari.png");
+    background-size: cover;
+    background-position-x: 44%;
+    background-repeat: no-repeat;
+  }
+
+  .smoke-2 {
+    height: 800px;
+    margin-top: -380px;
+    background-image: url("./../images/Taustakuvat/smokekupera.png");
+    background-size: cover;
+    background-position-x: 44%;
+    background-repeat: no-repeat;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   .hp-section {
-    min-height: 500px;
+    background-position-x: 19%;
+    height: 800px;
+  }
+
+  .humavoid-home-section-logo {
+  }
+
+  .home-section-header-unscrolled {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    background: transparent;
+    margin-top: -128px;
+    position: sticky;
+    top: 0;
+  }
+
+  .home-section-header-scrolled {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    background: #111111;
+    margin-top: -128px;
+    position: sticky;
+    top: 0;
+  }
+
+  .navigation-bar-burger-icon div {
+    display: none;
+  }
+
+  .smoke-1 {
+    height: 800px;
+    margin-top: -460px;
+    background-image: url("./../images/Taustakuvat/smokekaari.png");
+    background-size: cover;
+    background-position-x: 44%;
+    background-repeat: no-repeat;
+  }
+
+  .smoke-2 {
+    height: 800px;
+    margin-top: -415px;
+    background-image: url("./../images/Taustakuvat/smokekupera.png");
+    background-size: cover;
+    background-position-x: 44%;
+    background-repeat: no-repeat;
   }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  .hp-section {
-    min-height: 600px;
+  .home-section-header-unscrolled {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    background: transparent;
+    margin-top: -128px;
+    position: sticky;
+    top: 0;
   }
-}
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-  .hp-section {
-    background-position-x: 25%;
-    min-height: 800px;
+  .home-section-header-scrolled {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    background: #111111;
+    margin-top: -128px;
+    position: sticky;
+    top: 0;
   }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1367px) {
+  .home-section-header-unscrolled {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    background: transparent;
+    margin-top: -128px;
+    position: sticky;
+    top: 0;
+  }
+
+  .home-section-header-scrolled {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    background: #111111;
+    margin-top: -128px;
+    position: sticky;
+    top: 0;
+  }
   .hp-section {
-    background-position-x: 25%;
+    background-position-x: 44%;
     min-height: 1000px;
+  }
+
+  .smoke-1 {
+    display: flex;
+    margin-top: -580px;
+    min-height: 1000px;
+    background-position-x: 90%;
+    background-image: url("./../images/Taustakuvat/smokekaari.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .smoke-2 {
+    display: flex;
+    margin-top: -475px;
+    min-height: 1000px;
+    background-position-x: 90%;
+    background-image: url("./../images/Taustakuvat/smokekupera.png");
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 }
 
 @media only screen and (min-width: 1680px) {
-  .hp-section {
-    background-position-x: 25%;
+  .home-section-header-unscrolled {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    background: transparent;
+    margin-top: -128px;
+    position: sticky;
+    top: 0;
   }
-}
 
-@media only screen and (min-width: 2000px) {
+  .home-section-header-scrolled {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    background: #111111;
+    margin-top: -128px;
+    position: sticky;
+    top: 0;
+  }
   .hp-section {
+    background-position-x: 44%;
   }
 }
 
@@ -92,13 +264,6 @@
   justify-content: center;
   background: #111111;
   width: 100%;
-}
-
-.home-section-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 30px;
 }
 
 .nav-links-wrapper {
@@ -133,31 +298,41 @@
 }
 
 .home-section {
-  background-image: url("./../images/Taustakuvat/1.jpg");
+  display: flex;
+  flex-direction: column;
+  background-image: url("./../images/Taustakuvat/1_Blank.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .bio-section {
-  background-image: url("./../images/Taustakuvat/2.jpg");
+  display: flex;
+  flex-direction: column;
+  background-image: url("./../images/Taustakuvat/2_Blank.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .tour-section {
-  background-image: url("./../images/Taustakuvat/3.jpg");
+  display: flex;
+  flex-direction: column;
+  background-image: url("./../images/Taustakuvat/3_Blank.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .store-section {
-  background-image: url("./../images/Taustakuvat/4.jpg");
+  display: flex;
+  flex-direction: column;
+  background-image: url("./../images/Taustakuvat/4_Blank.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .contact-section {
-  background-image: url("./../images/Taustakuvat/5.jpg");
+  display: flex;
+  flex-direction: column;
+  background-image: url("./../images/Taustakuvat/5_Blank.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
