@@ -63,7 +63,7 @@ export function LandingPage() {
   }, []);
 
   return (
-    <main className="landin-gage-wrapper">
+    <main className="landing-page-wrapper">
       <div className="section-wrapper">
         <header
           className={`${
