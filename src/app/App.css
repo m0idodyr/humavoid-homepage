@@ -258,7 +258,7 @@
   color: white;
 }
 
-.homepage-wrapper {
+.landing-page-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -300,7 +300,7 @@
 .home-section {
   display: flex;
   flex-direction: column;
-  background-image: url("./../images/Taustakuvat/1_Blank.jpg");
+  background-image: url("./../images/Taustakuvat/1_blank.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }

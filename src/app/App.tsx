@@ -25,12 +25,12 @@ export function App() {
           content="Humavoid - Official React application"
         />
       </Helmet>
-      <HomePage />
+      <LandingPage />
     </>
   );
 }
 
-export function HomePage() {
+export function LandingPage() {
   const isLoggedIn = true;
   const home = useRef(null);
   const bio = useRef(null);
@@ -63,7 +63,7 @@ export function HomePage() {
   }, []);
 
   return (
-    <main className="homepage-wrapper">
+    <main className="landin-gage-wrapper">
       <div className="section-wrapper">
         <header
           className={`${
@@ -91,20 +91,97 @@ export function HomePage() {
             </ul>
           </nav>
         </header>
-        <div className="home-section hp-section" ref={home}></div>
-        <div className="bio-section hp-section" ref={bio}>
-          <div className="smoke-1"></div>
-        </div>
-        <div className="tour-section hp-section" ref={tour}>
-          <div className="smoke-2"></div>
-        </div>
-        <div className="store-section hp-section" ref={store}>
-          <div className="smoke-1"></div>
-        </div>
-        <div className="contact-section hp-section" ref={contact}>
-          <div className="smoke-2"></div>
-        </div>
+        <HomeSection routing={home} />
+        <BioSection routing={bio} />
+        <TourSection routing={tour} />
+        <StoreSection routing={store} />
+        <ContactSection routing={contact} />
       </div>
     </main>
+  );
+}
+
+export function HomeSection(props: any) {
+  interface Picture {
+    src: string;
+    alt: string;
+  }
+
+  function Carousel() {
+    const [pictures, setPictures] = useState<Picture[]>([
+      { src: "/img/picture1.jpg", alt: "Picture 1" },
+      { src: "/img/picture2.jpg", alt: "Picture 2" },
+      { src: "/img/picture3.jpg", alt: "Picture 3" },
+    ]);
+    const [currentIndex, setCurrentIndex] = useState(0);
+
+    // Set up autoplay
+    /*useEffect(() => {
+      const interval = setInterval(() => {
+        setCurrentIndex((currentIndex + 1) % pictures.length);
+      }, 3000);
+      return () => clearInterval(interval);
+    });*/
+
+    // Handle previous button click
+    const handlePrevious = () => {
+      setCurrentIndex((currentIndex + pictures.length - 1) % pictures.length);
+    };
+
+    // Handle next button click
+    const handleNext = () => {
+      setCurrentIndex((currentIndex + 1) % pictures.length);
+    };
+
+    return (
+      <div className="home-section hp-section" ref={props.routing}>
+        <div className="carousel">
+          <img
+            src={pictures[currentIndex].src}
+            alt={pictures[currentIndex].alt}
+          />
+          <button onClick={handlePrevious}>Previous</button>
+          <button onClick={handleNext}>Next</button>
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="home-section-content-wrapper">
+      <Carousel />
+    </div>
+  );
+}
+
+export function BioSection(props: any) {
+  return (
+    <div className="bio-section hp-section" ref={props.routing}>
+      <div className="smoke-1"></div>
+    </div>
+  );
+}
+
+export function TourSection(props: any) {
+  return (
+    <div className="bio-section hp-section" ref={props.routing}>
+      <div className="smoke-2"></div>
+    </div>
+  );
+}
+
+export function StoreSection(props: any) {
+  return (
+    <div className="bio-section hp-section" ref={props.routing}>
+      <div className="smoke-1"></div>
+    </div>
+  );
+}
+
+export function ContactSection(props: any) {
+  return (
+    <div className="contact-section hp-section" ref={props.routing}>
+      <div className="smoke-2"></div>
+    </div>
   );
 }
