@@ -11,32 +11,23 @@ import { Helmet } from "react-helmet-async";
 import { Routes, Route, BrowserRouter, Link, NavLink } from "react-router-dom";
 import { useContext, Suspense } from "react";
 import { useRef, useEffect, useState } from "react";
+import nelio1 from "./../images/Temp/lidless.jpg";
+import nelio2 from "./../images/Temp/monkeytrap.jpg";
+import nelio3 from "./../images/Temp/glass.jpg";
+import nelio4 from "./../images/Temp/comahorizon.jpg";
 
 import "./App.css";
 //import { LoginStatusProvider } from '../utils/LoginStatusContext';
 //import LoginStatusContext from '../utils/LoginStatusContext';
 
 export function App() {
-  return (
-    <>
-      <Helmet titleTemplate="%s" defaultTitle="Humavoid - Official">
-        <meta
-          name="description"
-          content="Humavoid - Official React application"
-        />
-      </Helmet>
-      <LandingPage />
-    </>
-  );
-}
-
-export function LandingPage() {
   const isLoggedIn = true;
   const home = useRef(null);
   const bio = useRef(null);
   const tour = useRef(null);
   const store = useRef(null);
   const contact = useRef(null);
+  const [background, setBackground] = useState(false);
 
   const scrollToSection = (elementRef) => {
     window.scrollTo({
@@ -45,11 +36,9 @@ export function LandingPage() {
     });
   };
 
-  const [background, setBackground] = useState(false);
-
   useEffect(() => {
     const onScroll = () => {
-      if (window.scrollY > 0) {
+      if (window.scrollY > 200) {
         setBackground(true);
       } else {
         setBackground(false);
@@ -63,8 +52,15 @@ export function LandingPage() {
   }, []);
 
   return (
-    <main className="landing-page-wrapper">
-      <div className="section-wrapper">
+    <>
+      <Helmet titleTemplate="%s" defaultTitle="Humavoid - Official">
+        <meta
+          name="description"
+          content="Humavoid - Official React application"
+        />
+      </Helmet>
+      <main className="landing-page-wrapper">
+        <div className="humavoid-home-section-logo" />
         <header
           className={`${
             background
@@ -78,7 +74,7 @@ export function LandingPage() {
           >
             <div className="fa fa-bars"></div>
           </div>
-          <div className="humavoid-home-section-logo" />
+          <div className="humavoid-mobile-logo" />
           <nav className="navigation-bar">
             <ul className="nav-links-wrapper">
               <li onClick={() => scrollToSection(home)}>HOME</li>
@@ -91,65 +87,96 @@ export function LandingPage() {
             </ul>
           </nav>
         </header>
-        <HomeSection routing={home} />
-        <BioSection routing={bio} />
-        <TourSection routing={tour} />
-        <StoreSection routing={store} />
-        <ContactSection routing={contact} />
-      </div>
-    </main>
+        <div className="section-wrapper">
+          <HomeSection routing={home} />
+          <BioSection routing={bio} />
+          <TourSection routing={tour} />
+          <StoreSection routing={store} />
+          <ContactSection routing={contact} />
+        </div>
+      </main>
+    </>
   );
 }
 
 export function HomeSection(props: any) {
-  interface Picture {
-    src: string;
-    alt: string;
-  }
+  const [array, setArray] = useState([
+    {
+      src: nelio1,
+      alt: "Picture 1",
+      header: "LIDLESS",
+      text: "Lidlem ipsum doloress sit ametess, consectetouress adipischingess elitess, se do eiusmoless temporess incididunless ut laboress et doloress magna aliqua.",
+    },
+    {
+      src: nelio2,
+      alt: "Picture 2",
+      header: "ALUMINUM RAIN",
+      text: "Aluminum ipsumain dolorain sit ametrain, consecteturinum adipiscingum elit, sed do eiusmoduminum temporain incididunt ut laboreum et dolore magnarain aliqua.",
+    },
+    {
+      src: nelio3,
+      alt: "Picture 3",
+      header: "FORTUNE FOR DEMISE",
+      text: "Fortune ipsum dolor sit ametise, consecteturise adipiscing eliturne, sed do eiusmodise tempor incididunt ut laboremise et dolortune magna aliqua.",
+    },
+    {
+      src: nelio4,
+      alt: "Picture 4",
+      header: "COMA HORIZON",
+      text: "Lorem ipsum dolorizon sit amet, consectetur adipiscing elit, sed do eiusmod tempor comdunt ut labore et dolore magnazon aliqua.",
+    },
+  ]);
 
-  function Carousel() {
-    const [pictures, setPictures] = useState<Picture[]>([
-      { src: "/img/picture1.jpg", alt: "Picture 1" },
-      { src: "/img/picture2.jpg", alt: "Picture 2" },
-      { src: "/img/picture3.jpg", alt: "Picture 3" },
-    ]);
-    const [currentIndex, setCurrentIndex] = useState(0);
+  const shiftForward = () => {
+    let a = array.length - 1;
+    let b = array[a];
+    let [...newArr] = array.slice(0, -1);
+    let rdyArray = [b].concat(newArr);
+    setArray(rdyArray);
+  };
 
-    // Set up autoplay
-    /*useEffect(() => {
-      const interval = setInterval(() => {
-        setCurrentIndex((currentIndex + 1) % pictures.length);
-      }, 3000);
-      return () => clearInterval(interval);
-    });*/
-
-    // Handle previous button click
-    const handlePrevious = () => {
-      setCurrentIndex((currentIndex + pictures.length - 1) % pictures.length);
-    };
-
-    // Handle next button click
-    const handleNext = () => {
-      setCurrentIndex((currentIndex + 1) % pictures.length);
-    };
-
-    return (
-      <div className="home-section hp-section" ref={props.routing}>
-        <div className="carousel">
-          <img
-            src={pictures[currentIndex].src}
-            alt={pictures[currentIndex].alt}
-          />
-          <button onClick={handlePrevious}>Previous</button>
-          <button onClick={handleNext}>Next</button>
-        </div>
-      </div>
-    );
-  }
+  const shiftBackwards = () => {
+    let a = array[0];
+    let [...newArr] = array.slice(1);
+    let rdyArray = newArr.concat(a);
+    setArray(rdyArray);
+  };
 
   return (
-    <div className="home-section-content-wrapper">
-      <Carousel />
+    <div className="home-section hp-section" ref={props.routing}>
+      <div className="humavoid-home-section-logo" />
+      <div className="home-section-content-wrapper">
+        <div className="home-section-carousel-wrapper">
+          <div
+            className="home-section-shift-carousel-backwards-button"
+            onClick={shiftBackwards}
+          ></div>
+          <div className="home-section-carousel-showcase-card">
+            <img src={array[0].src} alt={array[0].alt}></img>
+            <h1>{array[0].header}</h1>
+            <p>{array[0].text}</p>
+          </div>
+          <div className="home-section-carousel-showcase-card">
+            <img src={array[1].src} alt={array[1].alt}></img>
+            <h1>{array[1].header}</h1>
+            <p>{array[1].text}</p>
+          </div>
+          <div className="home-section-carousel-showcase-card">
+            <img src={array[2].src} alt={array[2].alt}></img>
+            <h1>{array[2].header}</h1>
+            <p>{array[2].text}</p>
+          </div>
+          <div className="home-section-carousel-showcase-card">
+            <img src={array[3].src} alt={array[3].alt}></img>
+            <h1>{array[3].header}</h1>
+            <p>{array[3].text}</p>
+          </div>
+          <div
+            className="home-section-shift-carousel-forward-button"
+            onClick={shiftForward}
+          ></div>
+        </div>
+      </div>
     </div>
   );
 }
@@ -158,22 +185,25 @@ export function BioSection(props: any) {
   return (
     <div className="bio-section hp-section" ref={props.routing}>
       <div className="smoke-1"></div>
+      <div className="bio-section-content-wrapper"></div>
     </div>
   );
 }
 
 export function TourSection(props: any) {
   return (
-    <div className="bio-section hp-section" ref={props.routing}>
+    <div className="tour-section hp-section" ref={props.routing}>
       <div className="smoke-2"></div>
+      <div className="tour-section-content-wrapper"></div>
     </div>
   );
 }
 
 export function StoreSection(props: any) {
   return (
-    <div className="bio-section hp-section" ref={props.routing}>
+    <div className="store-section hp-section" ref={props.routing}>
       <div className="smoke-1"></div>
+      <div className="store-section-content-wrapper"></div>
     </div>
   );
 }
@@ -182,6 +212,7 @@ export function ContactSection(props: any) {
   return (
     <div className="contact-section hp-section" ref={props.routing}>
       <div className="smoke-2"></div>
+      <div className="contact-section-content-wrapper"></div>
     </div>
   );
 }
