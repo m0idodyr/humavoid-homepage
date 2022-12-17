@@ -13,7 +13,8 @@ code {
 }
 
 html {
-  width: 100%;
+  min-width: 320px;
+  overflow-x: hidden;
 }
 
 ul {

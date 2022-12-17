@@ -148,7 +148,7 @@ export function HomeSection(props: any) {
         <div className="home-section-carousel-wrapper">
           <div
             className="home-section-shift-carousel-backwards-button"
-            onClick={shiftBackwards}
+            onClick={shiftForward}
           ></div>
           <div className="home-section-carousel-content-wrapper">
             <div className="home-section-carousel-showcase-card">
@@ -174,7 +174,7 @@ export function HomeSection(props: any) {
           </div>
           <div
             className="home-section-shift-carousel-forward-button"
-            onClick={shiftForward}
+            onClick={shiftBackwards}
           ></div>
         </div>
       </div>
