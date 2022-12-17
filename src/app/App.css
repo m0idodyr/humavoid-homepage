@@ -68,7 +68,6 @@
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-  max-width: 1680px;
 }
 
 /* ------------------------------------- HomeSection ------------------------------------- */
@@ -149,6 +148,7 @@
   background-size: contain;
   background-repeat: no-repeat;
   cursor: pointer;
+  min-width: 50px;
   height: 50px;
   width: 50px;
   margin-top: 230px;
@@ -288,10 +288,6 @@
     margin-top: 150px;
   }
 
-  .home-section-carousel-content-wrapper div:nth-child(1) {
-    display: none;
-  }
-
   .home-section-carousel-content-wrapper div:nth-child(2) {
     display: none;
   }
@@ -300,12 +296,8 @@
     display: none;
   }
 
-  .home-section-shift-carousel-forward-button {
-    margin-left: -12px;
-  }
-
-  .home-section-shift-carousel-backwards-button {
-    margin-right: -12px;
+  .home-section-carousel-content-wrapper div:nth-child(4) {
+    display: none;
   }
 
   .navigation-bar-burger-icon div {
@@ -495,6 +487,7 @@
     top: 0;
     z-index: 2;
   }
+
   .hp-section {
     background-position-x: 44%;
     min-height: 1000px;
@@ -556,7 +549,69 @@
     z-index: 2;
   }
 
+  .smoke-1 {
+    margin-top: -760px;
+    min-height: 1300px;
+  }
+
+  .smoke-2 {
+    margin-top: -615px;
+    min-height: 1300px;
+  }
+
   .hp-section {
     background-position-x: 44%;
+    min-height: 1300px;
+  }
+}
+
+@media only screen and (min-width: 2100px) {
+  .smoke-1 {
+    margin-top: -880px;
+    min-height: 1500px;
+  }
+
+  .smoke-2 {
+    margin-top: -725px;
+    min-height: 1500px;
+  }
+
+  .hp-section {
+    background-position-x: 44%;
+    min-height: 1500px;
+  }
+}
+
+@media only screen and (min-width: 2560px) {
+  .smoke-1 {
+    margin-top: -1150px;
+    min-height: 1900px;
+  }
+
+  .smoke-2 {
+    margin-top: -900px;
+    min-height: 1900px;
+  }
+
+  .hp-section {
+    background-position-x: 44%;
+    min-height: 1900px;
+  }
+}
+
+@media only screen and (min-width: 3620px) {
+  .smoke-1 {
+    margin-top: -1200px;
+    min-height: 1900px;
+  }
+
+  .smoke-2 {
+    margin-top: -960px;
+    min-height: 1900px;
+  }
+
+  .hp-section {
+    background-position-x: 44%;
+    min-height: 1900px;
   }
 }
