@@ -582,7 +582,7 @@
   }
 }
 
-@media only screen and (min-width: 2560px) {
+@media only screen and (min-width: 2561px) {
   .smoke-1 {
     margin-top: -1150px;
     min-height: 1900px;
@@ -595,7 +595,7 @@
 
   .hp-section {
     background-position-x: 44%;
-    min-height: 1900px;
+    min-height: 1700px;
   }
 }
 
