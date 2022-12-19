@@ -1,12 +1,12 @@
 import React from "react";
-import { useState } from "react";
+import ImageCarousel from "../../components/imageCarousel";
 import nelio1 from "./../../../images/Temp/lidless.jpg";
 import nelio2 from "./../../../images/Temp/monkeytrap.jpg";
 import nelio3 from "./../../../images/Temp/glass.jpg";
 import nelio4 from "./../../../images/Temp/comahorizon.jpg";
 
 export default function HomeSection(props: any) {
-  const [array, setArray] = useState([
+  const array = [
     {
       src: nelio1,
       alt: "Picture 1",
@@ -31,47 +31,16 @@ export default function HomeSection(props: any) {
       header: "COMA HORIZON",
       text: "Lorem ipsum dolorizon sit amet, consectetur adipiscing elit, sed do eiusmod tempor comdunt ut labore et dolore magnazon aliqua.",
     },
-  ]);
-
-  const shiftForward = () => {
-    let a = array.length - 1;
-    let b = array[a];
-    let [...newArr] = array.slice(0, -1);
-    let rdyArray = [b].concat(newArr);
-    setArray(rdyArray);
-  };
-
-  const shiftBackwards = () => {
-    let a = array[0];
-    let [...newArr] = array.slice(1);
-    let rdyArray = newArr.concat(a);
-    setArray(rdyArray);
-  };
+  ];
 
   return (
     <section className="home-section hp-section" ref={props.routing}>
       <div className="home-section-content-wrapper">
-        <div className="home-section-carousel-wrapper">
-          <div
-            className="home-section-shift-carousel-backwards-button"
-            onClick={shiftForward}
-          ></div>
-          <div className="home-section-carousel-content-wrapper">
-            {array.slice(0, 4).map((item, key) => {
-              return (
-                <div className="home-section-carousel-showcase-card" key={key}>
-                  <img src={item.src} alt={item.alt}></img>
-                  <h1>{item.header}</h1>
-                  <p>{item.text}</p>
-                </div>
-              );
-            })}
-          </div>
-          <div
-            className="home-section-shift-carousel-forward-button"
-            onClick={shiftBackwards}
-          ></div>
-        </div>
+        <ImageCarousel
+          objectArray={array}
+          cardAmount={4}
+          dynamicClassName={"home-section"}
+        ></ImageCarousel>
       </div>
     </section>
   );

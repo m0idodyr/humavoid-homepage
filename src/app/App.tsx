@@ -14,6 +14,7 @@ import { useRef, useEffect, useState } from "react";
 import BioSection from "./pages/public/BioSection";
 import ContactSection from "./pages/public/ContactSection";
 import HomeSection from "./pages/public/HomeSection";
+import MusicSection from "./pages/public/MusicSection";
 import StoreSection from "./pages/public/StoreSection";
 import TourSection from "./pages/public/TourSection";
 
@@ -24,6 +25,7 @@ import "./App.css";
 export function App() {
   const isLoggedIn = true;
   const home = useRef(null);
+  const music = useRef(null);
   const bio = useRef(null);
   const tour = useRef(null);
   const store = useRef(null);
@@ -55,10 +57,7 @@ export function App() {
   return (
     <>
       <Helmet titleTemplate="%s" defaultTitle="Humavoid - Official">
-        <meta
-          name="description"
-          content="Humavoid - Official React application"
-        />
+        <meta name="description" content="Humavoid - Official" />
       </Helmet>
       <main className="landing-page-wrapper">
         <div className="humavoid-logo" />
@@ -72,6 +71,7 @@ export function App() {
           <nav className="navigation-bar">
             <ul className="nav-links-wrapper">
               <li onClick={() => scrollToSection(home)}>HOME</li>
+              <li onClick={() => scrollToSection(music)}>MUSIC</li>
               <li onClick={() => scrollToSection(bio)}>BIO</li>
               <li onClick={() => scrollToSection(tour)}>TOUR</li>
               <li onClick={() => scrollToSection(store)}>STORE</li>
@@ -83,6 +83,7 @@ export function App() {
         </header>
         <div className="section-wrapper">
           <HomeSection routing={home} />
+          <MusicSection routing={music} />
           <BioSection routing={bio} />
           <TourSection routing={tour} />
           <StoreSection routing={store} />

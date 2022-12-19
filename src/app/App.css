@@ -7,6 +7,10 @@
   }
 }
 
+* {
+  outline: 1px solid #f00 !important;
+}
+
 /* ------------------------------------- Utility classes ------------------------------------- */
 
 .grabbable {
@@ -47,7 +51,6 @@
   flex-direction: column;
   justify-content: center;
   background: #111111;
-  width: 100%;
 }
 
 .nav-links-wrapper {
@@ -151,14 +154,14 @@
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
-    margin-top: 200px;
+    margin-top: 50px;
     z-index: 1;
   }
 
   .home-section-content-wrapper {
     display: flex;
     justify-content: center;
-    margin-top: 200px;
+    margin-top: 50px;
     z-index: 1;
   }
 
@@ -202,12 +205,10 @@
     color: orange;
     font-size: 20px;
     margin-top: 40px;
-    user-select: text;
   }
 
   .home-section-carousel-showcase-card p {
     color: white;
-    user-select: text;
   }
 
   .home-section-shift-carousel-forward-button {
@@ -232,17 +233,22 @@
     margin-top: 230px;
   }
 
-  .home-section-carousel-content-wrapper div:nth-child(2) {
-    display: none;
+  .music-section {
+    display: flex;
+    flex-direction: column;
+    background-image: url("./../images/Taustakuvat/2_Blank.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: 0;
   }
 
-  .home-section-carousel-content-wrapper div:nth-child(3) {
-    display: none;
+  .music-section-content-wrapper {
+    display: flex;
+    justify-content: center;
+    z-index: 1;
   }
 
-  .home-section-carousel-content-wrapper div:nth-child(4) {
-    display: none;
-  }
+  /*BioSection*/
 
   .bio-section {
     display: flex;
@@ -259,6 +265,8 @@
     z-index: 1;
   }
 
+  /*TourSection*/
+
   .tour-section {
     display: flex;
     flex-direction: column;
@@ -274,6 +282,8 @@
     z-index: 1;
   }
 
+  /*StoreSection*/
+
   .store-section {
     display: flex;
     flex-direction: column;
@@ -288,6 +298,8 @@
     justify-content: center;
     z-index: 1;
   }
+
+  /*ContactSection*/
 
   .contact-section {
     display: flex;
@@ -427,12 +439,10 @@
     color: orange;
     font-size: 20px;
     margin-top: 40px;
-    user-select: text;
   }
 
   .home-section-carousel-showcase-card p {
     color: white;
-    user-select: text;
   }
 
   .home-section-shift-carousel-forward-button {
@@ -457,12 +467,82 @@
     margin-top: 230px;
   }
 
+  /*MusicSection*/
+
+  .music-section {
+    display: flex;
+    flex-direction: column;
+    background-image: url("./../images/Taustakuvat/2_Blank.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .music-section-content-wrapper {
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+  }
+
+  .music-section-carousel-wrapper {
+    animation: fadeIn 3.5s;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .music-section-carousel-content-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .music-section-carousel-showcase-card {
+    display: flex;
+    flex-direction: column;
+    user-select: none;
+    width: 500px;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+    user-select: none;
+  }
+
+  .music-section-carousel-showcase-card h1 {
+    color: orange;
+    font-size: 20px;
+    margin-top: 40px;
+  }
+
+  .music-section-carousel-showcase-card p {
+    color: white;
+  }
+
+  .music-section-shift-carousel-forward-button {
+    background-image: url("./../images/Sivustoelementit/Karuselli_Arrow_Left.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    transform: rotate(180deg);
+  }
+
+  .music-section-shift-carousel-backwards-button {
+    background-image: url("./../images/Sivustoelementit/Karuselli_Arrow_Left.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    min-width: 50px;
+    height: 50px;
+    width: 50px;
+  }
+
   /*BioSection*/
 
   .bio-section {
     display: flex;
     flex-direction: column;
-    background-image: url("./../images/Taustakuvat/2_Blank.jpg");
+    background-image: url("./../images/Taustakuvat/3_Blank.jpg");
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -478,7 +558,7 @@
   .tour-section {
     display: flex;
     flex-direction: column;
-    background-image: url("./../images/Taustakuvat/3_Blank.jpg");
+    background-image: url("./../images/Taustakuvat/4_Blank.jpg");
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -494,7 +574,7 @@
   .store-section {
     display: flex;
     flex-direction: column;
-    background-image: url("./../images/Taustakuvat/4_Blank.jpg");
+    background-image: url("./../images/Taustakuvat/5_Blank.jpg");
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -510,7 +590,7 @@
   .contact-section {
     display: flex;
     flex-direction: column;
-    background-image: url("./../images/Taustakuvat/5_Blank.jpg");
+    background-image: url("./../images/Taustakuvat/7_Blank.jpg");
     background-size: cover;
     background-repeat: no-repeat;
   }
