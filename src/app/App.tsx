@@ -61,18 +61,11 @@ export function App() {
         />
       </Helmet>
       <main className="landing-page-wrapper">
-        <div className="humavoid-home-section-logo" />
+        <div className="humavoid-logo" />
         <header
-          className={`${
-            background
-              ? "home-section-header-scrolled"
-              : "home-section-header-unscrolled"
-          }`}
+          className={`${background ? "header-scrolled" : "header-unscrolled"}`}
         >
-          <div
-            className="navigation-bar-burger-icon"
-            onClick={() => scrollToSection(store)}
-          >
+          <div className="burger-icon" onClick={() => scrollToSection(store)}>
             <div className="fa fa-bars"></div>
           </div>
           <div className="humavoid-mobile-logo" />
