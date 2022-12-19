@@ -78,7 +78,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: -287px;
+    margin-bottom: -100px;
     height: 80px;
     background: #111111;
     position: sticky;
@@ -90,7 +90,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: -287px;
+    margin-bottom: -100px;
     height: 80px;
     background: #111111;
     position: sticky;
@@ -144,7 +144,7 @@
 
   .hp-section {
     height: 800px;
-    background-size: cover;
+    background-position-x: 19%;
   }
 
   .home-section-content-wrapper {
@@ -174,7 +174,6 @@
     background-image: url("./../images/Taustakuvat/1_blank.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position-x: 19%;
   }
 
   .home-section-carousel-content-wrapper {
@@ -312,8 +311,46 @@
     display: none;
   }
 
+  .header-unscrolled {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: -287px;
+    background: transparent;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+  }
+
+  .header-scrolled {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: -287px;
+    background: #111111;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+  }
+
   .nav-links-wrapper {
     gap: 40px;
+  }
+
+  .humavoid-logo {
+    display: flex;
+    align-self: center;
+    height: 160px;
+    width: 500px;
+    background-image: url("./../images/Sivustoelementit/Logo_Hero.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 54px;
+    z-index: 2;
+  }
+
+  .humavoid-mobile-logo {
+    display: none;
   }
 
   .smoke-1 {
@@ -339,45 +376,7 @@
     height: 800px;
   }
 
-  .humavoid-logo {
-    display: flex;
-    align-self: center;
-    height: 160px;
-    width: 500px;
-    background-image: url("./../images/Sivustoelementit/Logo_Hero.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-top: 54px;
-    z-index: 2;
-  }
-
-  .humavoid-mobile-logo {
-    display: none;
-  }
-
   /*HomeSection*/
-
-  .header-unscrolled {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: -287px;
-    background: transparent;
-    position: sticky;
-    top: 0;
-    z-index: 2;
-  }
-
-  .header-scrolled {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: -287px;
-    background: #111111;
-    position: sticky;
-    top: 0;
-    z-index: 2;
-  }
 
   .home-section-content-wrapper {
     display: flex;

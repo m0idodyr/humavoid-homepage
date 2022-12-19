@@ -57,7 +57,7 @@ export default function HomeSection(props: any) {
             onClick={shiftForward}
           ></div>
           <div className="home-section-carousel-content-wrapper">
-            {array.map((item, key) => {
+            {array.slice(0, 4).map((item, key) => {
               return (
                 <div className="home-section-carousel-showcase-card" key={key}>
                   <img src={item.src} alt={item.alt}></img>
