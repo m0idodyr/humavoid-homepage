@@ -57,26 +57,15 @@ export default function HomeSection(props: any) {
             onClick={shiftForward}
           ></div>
           <div className="home-section-carousel-content-wrapper">
-            <div className="home-section-carousel-showcase-card">
-              <img src={array[0].src} alt={array[0].alt}></img>
-              <h1>{array[0].header}</h1>
-              <p>{array[0].text}</p>
-            </div>
-            <div className="home-section-carousel-showcase-card">
-              <img src={array[1].src} alt={array[1].alt}></img>
-              <h1>{array[1].header}</h1>
-              <p>{array[1].text}</p>
-            </div>
-            <div className="home-section-carousel-showcase-card">
-              <img src={array[2].src} alt={array[2].alt}></img>
-              <h1>{array[2].header}</h1>
-              <p>{array[2].text}</p>
-            </div>
-            <div className="home-section-carousel-showcase-card">
-              <img src={array[3].src} alt={array[3].alt}></img>
-              <h1>{array[3].header}</h1>
-              <p>{array[3].text}</p>
-            </div>
+            {array.map((item, key) => {
+              return (
+                <div className="home-section-carousel-showcase-card" key={key}>
+                  <img src={item.src} alt={item.alt}></img>
+                  <h1>{item.header}</h1>
+                  <p>{item.text}</p>
+                </div>
+              );
+            })}
           </div>
           <div
             className="home-section-shift-carousel-forward-button"

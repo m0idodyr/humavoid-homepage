@@ -163,6 +163,7 @@
   }
 
   .home-section-carousel-wrapper {
+    animation: fadeIn 3.5s;
     display: flex;
     flex-direction: row;
   }
@@ -185,7 +186,6 @@
   }
 
   .home-section-carousel-showcase-card {
-    animation: fadeIn 3.5s;
     display: flex;
     flex-direction: column;
     user-select: none;
@@ -387,6 +387,7 @@
   }
 
   .home-section-carousel-wrapper {
+    animation: fadeIn 3.5s;
     display: flex;
     flex-direction: row;
     margin-left: 50px;
@@ -410,7 +411,6 @@
   }
 
   .home-section-carousel-showcase-card {
-    animation: fadeIn 3.5s;
     display: flex;
     flex-direction: column;
     user-select: none;
