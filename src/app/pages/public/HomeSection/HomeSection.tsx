@@ -1,9 +1,10 @@
 import React from "react";
-import ImageCarousel from "../../components/imageCarousel";
-import nelio1 from "./../../../images/Temp/lidless.jpg";
-import nelio2 from "./../../../images/Temp/monkeytrap.jpg";
-import nelio3 from "./../../../images/Temp/glass.jpg";
-import nelio4 from "./../../../images/Temp/comahorizon.jpg";
+import "./HomeSection.css";
+import ImageCarousel from "./../../../components/imageCarousel";
+import nelio1 from "./../../../../images/Temp/lidless.jpg";
+import nelio2 from "./../../../../images/Temp/monkeytrap.jpg";
+import nelio3 from "./../../../../images/Temp/glass.jpg";
+import nelio4 from "./../../../../images/Temp/comahorizon.jpg";
 
 export default function HomeSection(props: any) {
   const array = [

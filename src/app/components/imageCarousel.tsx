@@ -43,8 +43,16 @@ export default function Carousel({
               key={key}
             >
               <img src={item.src} alt={item.alt}></img>
-              <h1>{item.header}</h1>
-              <p>{item.text}</p>
+              <div
+                className={dynamicClassName + "-carousel-showcase-card-header"}
+              >
+                {item.header}
+              </div>
+              <div
+                className={dynamicClassName + "-carousel-showcase-card-text"}
+              >
+                {item.text}
+              </div>
             </div>
           );
         })}

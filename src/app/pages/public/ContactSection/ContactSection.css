@@ -1,0 +1,63 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.contact-section div * {
+  outline: 1px solid #f00 !important;
+}
+
+@media only screen and (max-width: 650px) {
+  .contact-section {
+    display: flex;
+    flex-direction: column;
+    background-image: url("./../../../../images/Taustakuvat/5_Blank.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: 19%;
+  }
+
+  .contact-section-content-wrapper {
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+  }
+}
+
+@media only screen and (min-width: 650px) {
+  .contact-section {
+    display: flex;
+    flex-direction: column;
+    background-image: url("./../../../../images/Taustakuvat/7_Blank.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .contact-section-content-wrapper {
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+}
+
+@media only screen and (min-width: 1367px) {
+}
+
+@media only screen and (min-width: 1680px) {
+}
+
+@media only screen and (min-width: 2100px) {
+}
+
+@media only screen and (min-width: 2561px) {
+}
+
+@media only screen and (min-width: 3620px) {
+}

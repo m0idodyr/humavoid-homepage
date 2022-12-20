@@ -1,4 +1,5 @@
 import React from "react";
+import "./BioSection.css";
 
 export default function BioSection(props: any) {
   return (

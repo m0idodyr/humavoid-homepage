@@ -43,7 +43,7 @@ export default function Carousel({
               key={key}
             >
               <iframe src={item.url} allowFullScreen title="Embedded youtube" />
-              <h1>{item.header}</h1>
+              <div className="music-video-header">{item.header}</div>
             </div>
           );
         })}

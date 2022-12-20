@@ -7,8 +7,12 @@
   }
 }
 
-* {
+.music-section div * {
   outline: 1px solid #f00 !important;
+}
+
+section {
+  outline: 1px solid rgb(51, 255, 0) !important;
 }
 
 /* ------------------------------------- Utility classes ------------------------------------- */
@@ -149,172 +153,6 @@
     height: 800px;
     background-position-x: 19%;
   }
-
-  .home-section-content-wrapper {
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center;
-    margin-top: 50px;
-    z-index: 1;
-  }
-
-  .home-section-content-wrapper {
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-    z-index: 1;
-  }
-
-  .home-section-carousel-wrapper {
-    animation: fadeIn 3.5s;
-    display: flex;
-    flex-direction: row;
-  }
-
-  .home-section {
-    display: flex;
-    flex-direction: column;
-    background-image: url("./../images/Taustakuvat/1_blank.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-
-  .home-section-carousel-content-wrapper {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin-top: 150px;
-  }
-
-  .home-section-carousel-showcase-card {
-    display: flex;
-    flex-direction: column;
-    user-select: none;
-    width: 230px;
-    transition-property: all;
-    transition-duration: 0.3s;
-    transition-timing-function: ease;
-  }
-
-  .home-section-carousel-showcase-card img:hover {
-    transform: scale(1.1);
-  }
-
-  .home-section-carousel-showcase-card h1 {
-    color: orange;
-    font-size: 20px;
-    margin-top: 40px;
-  }
-
-  .home-section-carousel-showcase-card p {
-    color: white;
-  }
-
-  .home-section-shift-carousel-forward-button {
-    background-image: url("./../images/Sivustoelementit/Karuselli_Arrow_Left.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    cursor: pointer;
-    height: 50px;
-    width: 50px;
-    margin-top: 230px;
-    transform: rotate(180deg);
-  }
-
-  .home-section-shift-carousel-backwards-button {
-    background-image: url("./../images/Sivustoelementit/Karuselli_Arrow_Left.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    cursor: pointer;
-    min-width: 50px;
-    height: 50px;
-    width: 50px;
-    margin-top: 230px;
-  }
-
-  .music-section {
-    display: flex;
-    flex-direction: column;
-    background-image: url("./../images/Taustakuvat/2_Blank.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-x: 0;
-  }
-
-  .music-section-content-wrapper {
-    display: flex;
-    justify-content: center;
-    z-index: 1;
-  }
-
-  /*BioSection*/
-
-  .bio-section {
-    display: flex;
-    flex-direction: column;
-    background-image: url("./../images/Taustakuvat/2_Blank.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-x: 0;
-  }
-
-  .bio-section-content-wrapper {
-    display: flex;
-    justify-content: center;
-    z-index: 1;
-  }
-
-  /*TourSection*/
-
-  .tour-section {
-    display: flex;
-    flex-direction: column;
-    background-image: url("./../images/Taustakuvat/3_Blank.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-x: 0%;
-  }
-
-  .tour-section-content-wrapper {
-    display: flex;
-    justify-content: center;
-    z-index: 1;
-  }
-
-  /*StoreSection*/
-
-  .store-section {
-    display: flex;
-    flex-direction: column;
-    background-image: url("./../images/Taustakuvat/4_Blank.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-x: 17%;
-  }
-
-  .store-section-content-wrapper {
-    display: flex;
-    justify-content: center;
-    z-index: 1;
-  }
-
-  /*ContactSection*/
-
-  .contact-section {
-    display: flex;
-    flex-direction: column;
-    background-image: url("./../images/Taustakuvat/5_Blank.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-x: 19%;
-  }
-
-  .contact-section-content-wrapper {
-    display: flex;
-    justify-content: center;
-    z-index: 1;
-  }
 }
 
 /* Small devices (portrait tablets and large phones, 650px and up) */
@@ -376,7 +214,7 @@
 
   .smoke-2 {
     height: 800px;
-    margin-top: -415px;
+    margin-top: -380px;
     background-image: url("./../images/Taustakuvat/smokekupera.png");
     background-size: cover;
     background-position-x: 44%;
@@ -386,219 +224,6 @@
   .hp-section {
     background-position-x: 19%;
     height: 800px;
-  }
-
-  /*HomeSection*/
-
-  .home-section-content-wrapper {
-    display: flex;
-    justify-content: center;
-    margin-top: 200px;
-    z-index: 1;
-  }
-
-  .home-section-carousel-wrapper {
-    animation: fadeIn 3.5s;
-    display: flex;
-    flex-direction: row;
-    margin-left: 50px;
-    margin-right: 50px;
-  }
-
-  .home-section {
-    display: flex;
-    flex-direction: column;
-    background-image: url("./../images/Taustakuvat/1_blank.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-
-  .home-section-carousel-content-wrapper {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin-top: 150px;
-  }
-
-  .home-section-carousel-showcase-card {
-    display: flex;
-    flex-direction: column;
-    user-select: none;
-    width: 230px;
-    transition-property: all;
-    transition-duration: 0.3s;
-    transition-timing-function: ease;
-  }
-
-  .home-section-carousel-showcase-card img:hover {
-    transform: scale(1.1);
-  }
-
-  .home-section-carousel-showcase-card h1 {
-    color: orange;
-    font-size: 20px;
-    margin-top: 40px;
-  }
-
-  .home-section-carousel-showcase-card p {
-    color: white;
-  }
-
-  .home-section-shift-carousel-forward-button {
-    background-image: url("./../images/Sivustoelementit/Karuselli_Arrow_Left.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    cursor: pointer;
-    height: 50px;
-    width: 50px;
-    margin-top: 230px;
-    transform: rotate(180deg);
-  }
-
-  .home-section-shift-carousel-backwards-button {
-    background-image: url("./../images/Sivustoelementit/Karuselli_Arrow_Left.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    cursor: pointer;
-    min-width: 50px;
-    height: 50px;
-    width: 50px;
-    margin-top: 230px;
-  }
-
-  /*MusicSection*/
-
-  .music-section {
-    display: flex;
-    flex-direction: column;
-    background-image: url("./../images/Taustakuvat/2_Blank.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-
-  .music-section-content-wrapper {
-    display: flex;
-    justify-content: center;
-    z-index: 1;
-  }
-
-  .music-section-carousel-wrapper {
-    animation: fadeIn 3.5s;
-    display: flex;
-    flex-direction: row;
-  }
-
-  .music-section-carousel-content-wrapper {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-
-  .music-section-carousel-showcase-card {
-    display: flex;
-    flex-direction: column;
-    user-select: none;
-    width: 500px;
-    transition-property: all;
-    transition-duration: 0.3s;
-    transition-timing-function: ease;
-    user-select: none;
-  }
-
-  .music-section-carousel-showcase-card h1 {
-    color: orange;
-    font-size: 20px;
-    margin-top: 40px;
-  }
-
-  .music-section-carousel-showcase-card p {
-    color: white;
-  }
-
-  .music-section-shift-carousel-forward-button {
-    background-image: url("./../images/Sivustoelementit/Karuselli_Arrow_Left.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    cursor: pointer;
-    height: 50px;
-    width: 50px;
-    transform: rotate(180deg);
-  }
-
-  .music-section-shift-carousel-backwards-button {
-    background-image: url("./../images/Sivustoelementit/Karuselli_Arrow_Left.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    cursor: pointer;
-    min-width: 50px;
-    height: 50px;
-    width: 50px;
-  }
-
-  /*BioSection*/
-
-  .bio-section {
-    display: flex;
-    flex-direction: column;
-    background-image: url("./../images/Taustakuvat/3_Blank.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-
-  .bio-section-content-wrapper {
-    display: flex;
-    justify-content: center;
-    z-index: 1;
-  }
-
-  /*TourSection*/
-
-  .tour-section {
-    display: flex;
-    flex-direction: column;
-    background-image: url("./../images/Taustakuvat/4_Blank.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-
-  .tour-section-content-wrapper {
-    display: flex;
-    justify-content: center;
-    z-index: 1;
-  }
-
-  /*StoreSection*/
-
-  .store-section {
-    display: flex;
-    flex-direction: column;
-    background-image: url("./../images/Taustakuvat/5_Blank.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-
-  .store-section-content-wrapper {
-    display: flex;
-    justify-content: center;
-    z-index: 1;
-  }
-
-  /*ContactSection*/
-
-  .contact-section {
-    display: flex;
-    flex-direction: column;
-    background-image: url("./../images/Taustakuvat/7_Blank.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-
-  .contact-section-content-wrapper {
-    display: flex;
-    justify-content: center;
-    z-index: 1;
   }
 }
 
@@ -726,7 +351,7 @@
   }
 
   .smoke-2 {
-    margin-top: -725px;
+    margin-top: -710px;
     min-height: 1500px;
   }
 

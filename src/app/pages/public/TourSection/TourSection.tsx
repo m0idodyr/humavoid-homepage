@@ -1,4 +1,5 @@
 import React from "react";
+import "./TourSection.css";
 
 export default function TourSection(props: any) {
   return (

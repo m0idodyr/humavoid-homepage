@@ -11,12 +11,12 @@ import { Helmet } from "react-helmet-async";
 import { Routes, Route, BrowserRouter, Link, NavLink } from "react-router-dom";
 import { useContext, Suspense } from "react";
 import { useRef, useEffect, useState } from "react";
-import BioSection from "./pages/public/BioSection";
-import ContactSection from "./pages/public/ContactSection";
-import HomeSection from "./pages/public/HomeSection";
-import MusicSection from "./pages/public/MusicSection";
-import StoreSection from "./pages/public/StoreSection";
-import TourSection from "./pages/public/TourSection";
+import BioSection from "./pages/public/BioSection/BioSection";
+import ContactSection from "./pages/public/ContactSection/ContactSection";
+import HomeSection from "./pages/public/HomeSection/HomeSection";
+import MusicSection from "./pages/public/MusicSection/MusicSection";
+import StoreSection from "./pages/public/StoreSection/StoreSection";
+import TourSection from "./pages/public/TourSection/TourSection";
 
 import "./App.css";
 //import { LoginStatusProvider } from '../utils/LoginStatusContext';
