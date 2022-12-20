@@ -62,7 +62,7 @@ export default function MusicSection(props: any) {
               </div>
             </div>
             <div>
-              <div>SINGLES</div>
+              <div className="singles-header">SINGLES</div>
               <div className="singles-showcase-wrapper">
                 <div className="singles-showcase-card">
                   <img

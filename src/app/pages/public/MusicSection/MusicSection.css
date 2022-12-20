@@ -130,8 +130,25 @@
     gap: 20px;
   }
 
+  .albums-wrapper {
+  }
+
+  .albums-header {
+    color: orange;
+  }
+
+  .albums-showcase-wrapper {
+  }
+
+  .albums-showcase-card {
+  }
+
   .albums-showcase-card-image {
     width: 200px;
+  }
+
+  .albums-showcase-card-text {
+    color: white;
   }
 
   .singles-showcase-wrapper {
@@ -140,8 +157,22 @@
     gap: 20px;
   }
 
+  .singles-header {
+    color: orange;
+  }
+
+  .singles-showcase-wrapper {
+  }
+
+  .singles-showcase-card {
+  }
+
   .singles-showcase-card-image {
     width: 200px;
+  }
+
+  .singles-showcase-card-text {
+    color: white;
   }
 
   .music-video-wrapper {
