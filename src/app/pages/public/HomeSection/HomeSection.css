@@ -7,9 +7,9 @@
   }
 }
 
-.home-section div * {
+/*.home-section div * {
   outline: 1px solid #f00 !important;
-}
+}*/
 
 @media only screen and (max-width: 650px) {
   .home-section-content-wrapper {
@@ -49,9 +49,30 @@
     margin-top: 150px;
   }
 
+  .home-section-carousel-content-wrapper
+    .home-section-carousel-showcase-card:nth-child(1) {
+    display: flex;
+  }
+
+  .home-section-carousel-content-wrapper
+    .home-section-carousel-showcase-card:nth-child(2) {
+    display: none;
+  }
+
+  .home-section-carousel-content-wrapper
+    .home-section-carousel-showcase-card:nth-child(3) {
+    display: none;
+  }
+
+  .home-section-carousel-content-wrapper
+    .home-section-carousel-showcase-card:nth-child(4) {
+    display: none;
+  }
+
   .home-section-carousel-showcase-card {
     display: flex;
     flex-direction: column;
+    text-align: center;
     user-select: none;
     width: 230px;
     transition-property: all;
@@ -63,13 +84,13 @@
     transform: scale(1.1);
   }
 
-  .home-section-carousel-showcase-card h1 {
+  .home-section-carousel-showcase-card-header {
     color: orange;
     font-size: 20px;
     margin-top: 40px;
   }
 
-  .home-section-carousel-showcase-card p {
+  .home-section-carousel-showcase-card-text {
     color: white;
   }
 
@@ -123,9 +144,19 @@
   .home-section-carousel-content-wrapper {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 20px;
     margin-top: 150px;
+  }
+
+  .home-section-carousel-content-wrapper
+    .home-section-carousel-showcase-card:nth-child(3) {
+    display: none;
+  }
+
+  .home-section-carousel-content-wrapper
+    .home-section-carousel-showcase-card:nth-child(4) {
+    display: none;
   }
 
   .home-section-carousel-showcase-card {
@@ -176,9 +207,35 @@
 }
 
 @media only screen and (min-width: 900px) {
+  .home-section-carousel-showcase-card {
+    width: 230px;
+  }
+
+  .home-section-carousel-content-wrapper
+    .home-section-carousel-showcase-card:nth-child(3) {
+    display: flex;
+  }
+
+  .home-section-carousel-content-wrapper
+    .home-section-carousel-showcase-card:nth-child(4) {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 1367px) {
+  .home-section-carousel-showcase-card {
+    width: 230px;
+  }
+
+  .home-section-carousel-content-wrapper
+    .home-section-carousel-showcase-card:nth-child(3) {
+    display: flex;
+  }
+
+  .home-section-carousel-content-wrapper
+    .home-section-carousel-showcase-card:nth-child(4) {
+    display: flex;
+  }
 }
 
 @media only screen and (min-width: 1680px) {

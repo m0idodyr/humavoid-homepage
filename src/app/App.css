@@ -7,13 +7,9 @@
   }
 }
 
-.music-section div * {
-  outline: 1px solid #f00 !important;
-}
-
-section {
+/*section {
   outline: 1px solid rgb(51, 255, 0) !important;
-}
+}*/
 
 /* ------------------------------------- Utility classes ------------------------------------- */
 
@@ -133,7 +129,7 @@ section {
 
   .smoke-1 {
     height: 800px;
-    margin-top: -465px;
+    margin-top: -460px;
     background-image: url("./../images/Taustakuvat/smokekaari.png");
     background-size: cover;
     background-position-x: 44%;
@@ -230,7 +226,7 @@ section {
 /* Medium devices (landscape tablets, 900px and up) */
 @media only screen and (min-width: 900px) {
   .nav-links-wrapper {
-    gap: 82px;
+    gap: 52px;
   }
 
   .header-unscrolled {
